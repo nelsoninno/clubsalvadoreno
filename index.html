@@ -743,13 +743,13 @@ if(sbForm){
     if(!sbForm.checkValidity()){ sbForm.reportValidity(); return; }
     var btn=sbForm.querySelector('.sbox__submit');
     btn.disabled=true; btn.textContent='Enviando...';
-    var data=new FormData(sbForm);
+    var data=new URLSearchParams(new FormData(sbForm));
     data.append('fecha', new Date().toISOString());
     var thanks=function(){
       sbForm.innerHTML='<div class="sbox--done"><h3>¡Gracias por tu aporte!</h3><p>Tu sugerencia fue registrada. Escuchar a cada socio es la base de nuestra propuesta.</p></div>';
     };
     if(SB_ENDPOINT && SB_ENDPOINT.indexOf('http')===0){
-      fetch(SB_ENDPOINT,{method:'POST',mode:'no-cors',body:data}).then(thanks).catch(thanks);
+      fetch(SB_ENDPOINT,{method:'POST',mode:'no-cors',headers:{'Content-Type':'application/x-www-form-urlencoded;charset=UTF-8'},body:data.toString()}).then(thanks).catch(thanks);
     } else {
       thanks();
     }
