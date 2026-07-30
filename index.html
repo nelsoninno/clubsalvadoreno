@@ -32,7 +32,7 @@
 <style>
 :root{
   --teal:#0d9488; --teal-600:#0f766e; --teal-800:#115e59;
-  --navy:#0c3b38; --ink:#17323c; --muted:#5c7078;
+  --navy:#0c3b38; --ink:#17323c; --muted:#3f565e;
   --bg:#f2faf9; --card:#ffffff; --line:rgba(18,76,94,.12);
   --sand:#e0b978;
   --footer-bg:#0c3b38; --footer-fg:#e7f4f2;
@@ -127,7 +127,7 @@ section{position:relative}
 .mani__cols{display:grid;grid-template-columns:1fr 1fr;gap:26px;margin-top:26px}
 @media(max-width:560px){.mani__cols{grid-template-columns:1fr}}
 .mani__cols h3{font-size:1.16rem;color:var(--teal-800);margin:0 0 .5rem}
-.mani__cols p{font-size:.97rem;color:var(--muted);margin:0}
+.mani__cols p{font-size:1.05rem;color:var(--muted);margin:0}
 .mani__img{position:relative}
 .mani__img img{border-radius:20px;box-shadow:0 30px 60px -30px rgba(15,47,59,.5);width:100%;object-fit:cover;aspect-ratio:1/1}
 .mani__img::after{content:"";position:absolute;inset:0;border-radius:20px;box-shadow:inset 0 0 0 1px rgba(255,255,255,.25)}
@@ -148,7 +148,7 @@ section{position:relative}
 .pillar:hover{transform:translateY(-6px);box-shadow:0 30px 55px -30px rgba(15,47,59,.5)}
 .pillar__num{display:block;font-family:var(--font-display);font-size:3rem;line-height:1;color:var(--teal);font-weight:700;margin-bottom:.35rem}
 .pillar__t{font-size:1.5rem;font-weight:600;margin:.1rem 0 .7rem;color:var(--teal-800);letter-spacing:-.01em}
-.pillar p{font-size:.96rem;color:var(--muted);margin:0}
+.pillar p{font-size:1.05rem;color:var(--muted);margin:0}
 
 /* team */
 .team{background:var(--card)}
@@ -180,15 +180,15 @@ section{position:relative}
 .member__body{padding:20px 22px 22px;display:flex;flex-direction:column;flex:1}
 .member__role{align-self:flex-start;background:var(--sand);color:#5a4212;font-weight:700;font-size:.64rem;letter-spacing:.12em;text-transform:uppercase;padding:.35em .8em;border-radius:100px;margin-bottom:.55rem}
 .member__name{font-size:1.28rem;margin:0 0 .25rem;color:var(--teal-800)}
-.member__tag{color:var(--teal-600);font-weight:600;font-size:.8rem;line-height:1.4;margin:0 0 .8rem}
+.member__tag{color:var(--teal-600);font-weight:600;font-size:.9rem;line-height:1.4;margin:0 0 .8rem}
 .member__hi{font-family:var(--font-display);font-style:italic;font-size:1.02rem;color:var(--ink);margin:0 0 1rem;line-height:1.4}
 .member__toggle{margin-top:auto;align-self:flex-start;background:none;border:none;color:var(--teal);font-family:var(--font-body);font-weight:700;font-size:.9rem;cursor:pointer;padding:0;display:inline-flex;align-items:center;gap:.35em}
 .member__toggle .chev{transition:transform .3s;font-size:1.2em;line-height:1}
 .member__toggle[aria-expanded="true"] .chev{transform:rotate(90deg)}
 .member__full{max-height:0;overflow:hidden;transition:max-height .5s ease}
-.member__full p{color:var(--muted);font-size:.92rem;margin:.9rem 0 0}
+.member__full p{color:var(--muted);font-size:1.02rem;margin:.9rem 0 0}
 .member--placeholder .member__photo{display:flex;align-items:center;justify-content:center}
-.member--placeholder .member__hi{color:var(--muted);font-style:normal;font-family:var(--font-body);font-size:.92rem}
+.member--placeholder .member__hi{color:var(--muted);font-style:normal;font-family:var(--font-body);font-size:1.02rem}
 
 /* stats */
 .stats{background:linear-gradient(135deg,var(--teal-800),#0b3a37);color:#fff}
@@ -213,7 +213,7 @@ section{position:relative}
 .sbox__input::placeholder{color:#9fb2b0}
 .sbox__input:focus{outline:none;border-color:var(--teal);box-shadow:0 0 0 3px rgba(13,148,136,.15);background:#fff}
 textarea.sbox__input{resize:vertical;min-height:70px}
-.sbox__check{display:flex;gap:.6em;align-items:flex-start;font-size:.9rem;color:var(--muted);line-height:1.45;margin:.4rem 0 1.2rem;cursor:pointer}
+.sbox__check{display:flex;gap:.6em;align-items:flex-start;font-size:1rem;color:var(--muted);line-height:1.45;margin:.4rem 0 1.2rem;cursor:pointer}
 .sbox__check input{margin-top:.2em;width:18px;height:18px;flex:none;accent-color:var(--teal);cursor:pointer}
 .sbox__submit{width:100%;justify-content:center;font-size:1rem}
 .sbox__submit:disabled{opacity:.6;cursor:default}
