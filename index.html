@@ -93,6 +93,9 @@ a.eyebrow--link{display:block;margin-bottom:1.2rem}
 .btn--g:hover{background:rgba(255,255,255,.2)}
 .btn--accent{background:var(--sand);color:#4a3410;box-shadow:0 10px 26px -8px rgba(224,185,120,.6)}
 .btn--accent:hover{background:#e8c589;transform:translateY(-2px)}
+.btn--wa{background:#25D366;color:#08312e;box-shadow:0 10px 26px -8px rgba(37,211,102,.55)}
+.btn--wa:hover{background:#20c65c;transform:translateY(-2px)}
+.btn--wa svg{width:1.15em;height:1.15em;fill:currentColor}
 
 /* candidate lineup */
 .lineup{background:var(--card);padding:clamp(48px,6vw,72px) 0;border-bottom:1px solid var(--line)}
@@ -300,6 +303,7 @@ footer{background:var(--footer-bg);color:var(--footer-fg);padding:56px 0 40px}
     <div class="hero__cta reveal in" style="--d:280ms">
       <a class="btn btn--p" href="#equipo">Conoce al equipo</a>
       <a class="btn btn--g" href="#propuesta">Nuestra propuesta</a>
+      <a class="btn btn--g" href="plan/">Las prioridades de nuestro plan</a>
       <a class="btn btn--accent" href="#opinion">Comparte tus ideas</a>
     </div>
   </div>
@@ -634,6 +638,7 @@ footer{background:var(--footer-bg);color:var(--footer-fg);padding:56px 0 40px}
     <p class="eyebrow eyebrow--strong reveal">Queremos escucharte</p>
     <h2 class="reveal" style="--d:60ms">Tu opinión construye el Club que queremos.</h2>
     <p class="reveal" style="--d:120ms">Cuéntanos en dos minutos qué está funcionando bien y qué podríamos mejorar. Escuchar a cada miembro es la base de nuestra propuesta.</p>
+    <div class="reveal" style="--d:150ms;margin:0 0 1.8rem"><a class="btn btn--wa" href="https://wa.me/50377581206?text=Hola%2C%20quiero%20contactar%20al%20equipo%20de%20Nelson%20Mej%C3%ADa%20Massis" target="_blank" rel="noopener"><svg viewBox="0 0 448 512" aria-hidden="true"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.134.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.30 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.7 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg> Contáctanos por WhatsApp</a></div>
     <form class="sbox reveal" id="suggestion-form" style="--d:180ms" novalidate>
       <div class="sbox__field">
         <label class="sbox__label" for="sb-name">Nombre <span class="sbox__req">*</span></label>
@@ -666,7 +671,7 @@ footer{background:var(--footer-bg);color:var(--footer-fg);padding:56px 0 40px}
     <div class="closing__vote reveal" style="--d:160ms">
       <p>Si compartes esta visión, acompáñanos con tu voto: <b>vota por Cerca de Ti, la planilla de Nelson Mejía Massis</b>, en las elecciones para la Junta Directiva 2026 del Club Salvadoreño.</p>
     </div>
-    <div class="reveal" style="--d:200ms"><a class="btn btn--p" href="#equipo">Conoce a los quince</a></div>
+    <div class="reveal" style="--d:200ms;display:flex;gap:14px;justify-content:center;flex-wrap:wrap"><a class="btn btn--p" href="#equipo">Conoce a los quince</a><a class="btn btn--wa" href="https://wa.me/50377581206?text=Hola%2C%20quiero%20contactar%20al%20equipo%20de%20Nelson%20Mej%C3%ADa%20Massis" target="_blank" rel="noopener"><svg viewBox="0 0 448 512" aria-hidden="true"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.134.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.30 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.7 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg> Contáctanos</a></div>
   </div>
 </section>
 </main>
